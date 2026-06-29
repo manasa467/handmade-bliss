@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collections | Handmade Bliss</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<!-- ================= ORDER POPUP ================= -->
+
+<div id="orderPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <img src="assets/logo.png" class="popup-logo">
+
+        <h2>Almost There! 🌸</h2>
+
+        <p>
+
+            We've prepared your order message.
+
+            Click the button below to open Instagram.
+
+            Once you're in our DM, simply <b>Paste</b> the copied message and send it.
+
+        </p>
+
+        <div class="popup-product">
+
+            <h3 id="popupProduct"></h3>
+
+            <span id="popupPrice"></span>
+
+        </div>
+
+        <div class="popup-buttons">
+
+            <button onclick="openInstagram()" class="primary-btn">
+
+                <i class="fab fa-instagram"></i>
+
+                Open Instagram
+
+            </button>
+
+            <button onclick="closePopup()" class="secondary-btn">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="assets/logo.png" alt="Handmade Bliss">
+
+                <h2>Handmade Bliss</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="collections.html" class="active">Collections</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= CATEGORY BUTTONS ================= -->
+
+    <section class="category-buttons">
+
+        <button class="category-btn active" data-category="crochet" onclick="showCategory('crochet')">
+
+            🧶 Crochet
+
+        </button>
+
+        <button class="category-btn" data-category="resin" onclick="showCategory('resin')">
+
+            ✨ Resin Art
+
+        </button>
+
+        <button class="category-btn" data-category="bracelets" onclick="showCategory('bracelets')">
+
+            💎 Bracelets
+
+        </button>
+
+    </section>
+
+
+    <!-- ================= CROCHET ================= -->
+
+    <section id="crochet" class="product-section active category">
+
+        <div class="section-title">
+
+            <span>🧶 Handmade Collection</span>
+
+            <h2>Crochet</h2>
+
+        </div>
+
+        <div id="crochet-products" class="products-grid">
+
+            <!-- JavaScript will generate cards -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RESIN ================= -->
+
+    <section id="resin" class="product-section">
+
+        <div class="section-title">
+
+            <span>✨ Personalized Collection</span>
+
+            <h2>Resin Art</h2>
+
+        </div>
+
+        <div id="resin-products" class="products-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= BRACELETS ================= -->
+
+    <section id="bracelets" class="product-section">
+
+        <div class="section-title">
+
+            <span>💎 Handmade Accessories</span>
+
+            <h2>Bracelets</h2>
+
+        </div>
+
+        <div id="bracelet-products" class="products-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= INSTAGRAM CTA ================= -->
+
+    <section class="instagram-cta">
+
+        <h2>
+
+            Love Our Handmade Creations?
+
+        </h2>
+
+        <p>
+
+            Visit our Instagram page to place your order,
+
+            request customization,
+
+            and explore even more handmade products.
+
+        </p>
+
+        <a href="https://instagram.com/_handmade_._bliss" target="_blank" class="instagram-btn">
+
+            <i class="fab fa-instagram"></i>
+
+            Order on Instagram
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <img src="assets/logo.png">
+
+                <h3>Handmade Bliss</h3>
+
+                <p>
+
+                    Crochet • Resin Art • Bracelets
+
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="collections.html">Collections</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+            <div class="footer-social">
+
+                <h4>Follow Us</h4>
+
+                <a href="https://instagram.com/_handmade_._bliss">
+
+                    <i class="fab fa-instagram"></i>
+
+                    Instagram
+
+                </a>
+
+                <a href="https://youtube.com/@handmadebliss-i1t">
+
+                    <i class="fab fa-youtube"></i>
+
+                    YouTube
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Handmade Bliss • Made with ❤️
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+    <script src="collections.js"></script>
+
+</body>
+
+</html>

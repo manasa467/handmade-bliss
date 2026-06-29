@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Handmade Bliss</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<!-- Contact Popup -->
+
+<div id="contactPopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <img src="assets/logo.png" class="popup-logo">
+
+        <h2>Message Ready! 🌸</h2>
+
+        <p>
+
+            Your message has been prepared.
+
+            Click below to open Instagram.
+
+            Once you're in our DM, simply paste the copied message and send it.
+
+        </p>
+
+        <div class="popup-buttons">
+
+            <button onclick="sendToInstagram()" class="primary-btn">
+
+                <i class="fab fa-instagram"></i>
+
+                Open Instagram
+
+            </button>
+
+            <button onclick="closeContactPopup()" class="secondary-btn">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="assets/logo.png" alt="Handmade Bliss Logo">
+
+                <h2>Handmade Bliss</h2>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="collections.html">Collections</a></li>
+
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+
+                <i class="fas fa-bars"></i>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="about">
+
+        <div class="section-title">
+
+            <span>Get In Touch</span>
+
+            <h2>Let's Create Something Special</h2>
+
+        </div>
+
+        <div class="about-container">
+
+            <!-- Left -->
+
+            <div class="about-content">
+
+                <h3>We'd Love To Hear From You 💖</h3>
+
+                <p>
+
+                    Handmade Bliss specializes in handcrafted crochet creations,
+                    resin art and personalized accessories.
+
+                </p>
+
+                <p>
+
+                    Feel free to message us for custom orders,
+                    pricing, gift ideas or collaborations.
+
+                </p>
+
+                <div class="about-highlights">
+
+                    <a href="https://instagram.com/_handmade_._bliss/" target="_blank" class="highlight-card">
+
+                        <i class="fab fa-instagram"></i>
+
+                        <h4>Instagram</h4>
+
+                    </a>
+
+                    <a href="https://www.youtube.com/@handmadebliss-i1t" target="_blank" class="highlight-card">
+
+                        <i class="fab fa-youtube"></i>
+
+                        <h4>YouTube</h4>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right -->
+
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Email Address" required>
+
+                    <textarea rows="6" placeholder="Tell us about your custom order..." required></textarea>
+
+                    <button type="submit" class="primary-btn">
+
+                        <i class="fab fa-instagram"></i>
+
+                        Send via Instagram
+
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section class="reviews">
+
+        <div class="section-title">
+
+            <span>FAQs</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <h3>Do you accept custom orders?</h3>
+
+                <p>
+
+                    Yes! Every crochet, resin and bracelet order
+                    can be customized according to your preferences.
+
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>How long does delivery take?</h3>
+
+                <p>
+
+                    Usually between 3–7 working days depending
+                    on customization.
+
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>Do you ship across India?</h3>
+
+                <p>
+
+                    Yes, we deliver handmade happiness
+                    all over India.
+
+                </p>
+
+            </div>
+
+            <div class="review-card">
+
+                <h3>Can I choose colors?</h3>
+
+                <p>
+
+                    Absolutely! You can choose colors,
+                    names and themes for your handmade products.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="custom-order">
+
+        <div class="custom-content">
+
+            <span>Made With Love ✿</span>
+
+            <h2>Ready To Place Your Custom Order?</h2>
+
+            <p>
+
+                We'd love to craft something unique for you.
+                Message us on Instagram today.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <img src="assets/logo.png" alt="Handmade Bliss">
+
+                <h3>Handmade Bliss</h3>
+
+                <p>
+
+                    Crochet • Resin Art • Handmade Accessories
+
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="collections.html">Collections</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+            <div class="footer-social">
+
+                <h4>Follow Us</h4>
+
+                <a href="https://instagram.com/_handmade_._bliss">
+
+                    <i class="fab fa-instagram"></i>
+
+                    Instagram
+
+                </a>
+
+                <a href="https://youtube.com/@handmadebliss-i1t">
+
+                    <i class="fab fa-youtube"></i>
+
+                    YouTube
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Handmade Bliss. Crafted with ❤️ and Creativity.
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
