@@ -357,7 +357,7 @@ function createCard(product) {
 
         <span class="badge">${product.badge}</span>
 
-        <img src="${product.image}" alt="${product.name}">
+        <img src="${product.image}" alt="${product.name}" loading="lazy">
 
         <div class="product-info">
 
