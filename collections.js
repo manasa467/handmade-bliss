@@ -95,7 +95,7 @@ const crochetProducts = [
         id: "sunny_stitch_pouch",
         name: "Sunny Stitch Pouch",
         price: "Starting from ₹149",
-        image: "assets/crochet/sunny_stitch_pouch_crochet.jpeg",
+        image: "assets/crochet/sunny_stictch_pouch_crochet.jpeg",
         badge: "New",
         description: "Handmade premium crochet pouch."
     }
