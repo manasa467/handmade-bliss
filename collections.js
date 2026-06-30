@@ -89,6 +89,15 @@ const crochetProducts = [
         image: "assets/crochet/midnight_charm_airpods_holder_crochet.png",
         badge: "Bestseller",
         description: "Handmade premium crochet airpods holder."
+    },
+
+    {
+        id: "sunny_stitch_pouch",
+        name: "Sunny Stitch Pouch",
+        price: "Starting from ₹149",
+        image: "assets/crochet/sunny_stitch_pouch_crochet.jpeg",
+        badge: "New",
+        description: "Handmade premium crochet pouch."
     }
 ];
 
